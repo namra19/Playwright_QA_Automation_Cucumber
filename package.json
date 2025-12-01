@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/namra19/Playwright_QA_Automation_Test#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
     "@playwright/test": "^1.57.0",
+    "@types/cucumber": "^6.0.1",
     "@types/node": "^24.10.1",
+    "cucumber": "^6.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

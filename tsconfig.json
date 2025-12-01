@@ -1,20 +1,35 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    // File Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+    // Environment Settings
     "module": "CommonJS",
+    "target": "ESNext",
     "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "types": [
-      "node",
-      "@playwright/test"
-    ],
     "esModuleInterop": true,
+    // Types
+    "types": [
+      "playwright",
+      "node"
+    ],
+    // Output Options
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    // Stricter Type Checking
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
     "strict": true,
-    "outDir": "dist"
+    "isolatedModules": true,
+    "baseUrl": "./",
+    // Module & Syntax
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "force",
+    "skipLibCheck": true
   },
   "include": [
-    "tests",
-    "pages"
+    "**/*.ts",
+    "playwright.config.ts"
   ]
 }
