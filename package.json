@@ -1,0 +1,25 @@
+{
+  "name": "playwright_qa_automation_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namra19/Playwright_QA_Automation_Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/namra19/Playwright_QA_Automation_Test/issues"
+  },
+  "homepage": "https://github.com/namra19/Playwright_QA_Automation_Test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
