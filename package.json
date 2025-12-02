@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/namra19/Playwright_QA_Automation_Test.git"

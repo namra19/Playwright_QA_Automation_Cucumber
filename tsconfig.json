@@ -26,8 +26,12 @@
     // Module & Syntax
     "verbatimModuleSyntax": false,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noImplicitAny": true
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "**/*.ts",
     "playwright.config.ts"
