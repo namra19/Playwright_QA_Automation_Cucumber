@@ -15,6 +15,7 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'playwright-report' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    ignoreHTTPSErrors: true,
     headless: true,
     viewport: { width: 1280, height: 720 },
     actionTimeout: 10 * 1000,
