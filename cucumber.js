@@ -9,11 +9,13 @@ module.exports = {
     publishQuiet: true,
     dryRun: false,
     require: [
-      "tests/steps/**/*.ts"
+      "tests/steps/**/*.ts",
+      "tests/support/world.ts",
+      "tests/support/hooks.ts",
     ],
     requireModule: [
       "ts-node/register"
     ],
-    format: []
+       format: ["progress"]
   }
 }
