@@ -15,3 +15,7 @@ Feature: Navigation Menu
     When the user navigate to the invoices page
     When calculate the total invoice amount
     Then the summary row should show the correct total
+
+  Scenario: Verify amount for invoice I634
+    When the user navigate to the invoices page
+    Then the amount for invoice "I634" should be "423.99 EUR"
