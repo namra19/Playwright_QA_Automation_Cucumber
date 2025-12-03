@@ -22,5 +22,11 @@ Then('the summary row should show the correct total', async function () {
   expect(Number(summaryValue.toFixed(2))).toBe(Number(this.total.toFixed(2)));
 })
 
+Then('the amount for invoice {string} should be {string}', async function (invoiceNumber: string, expectedAmount: string){
+    const actualAmount = await invoicesPage.getAmountByInvoice(invoiceNumber);
+    expect(actualAmount).toBe(expectedAmount);
+  }
+);
+
 
 
