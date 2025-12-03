@@ -36,4 +36,15 @@ export class InvoicesPage extends BasePage {
     const summaryText = await this.page.locator(this.summaryAmount).innerText();
     return parseFloat(summaryText.replace("EUR", "").trim());
   }
+
+  invoiceRowSelector(invoiceNumber: string) {
+    // Finds the row where the first cell matches the invoice number
+    return this.page.locator(`table tr:has(td:text("${invoiceNumber}"))`);
+  }
+
+  async getAmountByInvoice(invoiceNumber: string): Promise<string> {
+    const row = this.invoiceRowSelector(invoiceNumber);
+    const amount = row.locator('td').nth(2); // 3rd column = Amount
+    return (await amount.textContent())!.trim();
+  }
 }

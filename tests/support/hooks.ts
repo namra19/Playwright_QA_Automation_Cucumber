@@ -1,10 +1,12 @@
-import { Before, After } from "@cucumber/cucumber";
+import { Before, After, AfterAll } from "@cucumber/cucumber";
+import { CustomWorld, globalBrowser } from "./world";
 
-Before(async function () {
+Before(async function (this: CustomWorld) {
   await this.init();
 });
 
-After(async function () {
-  await this.page.close();
-  await this.browser.close();
+AfterAll(async function () {
+  if (globalBrowser) {
+    await globalBrowser.close();
+  }
 });
