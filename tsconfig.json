@@ -34,6 +34,7 @@
   ],
   "include": [
     "**/*.ts",
-    "playwright.config.ts"
+    "playwright.config.ts",
+    "generate-report.js"
   ]
 }
