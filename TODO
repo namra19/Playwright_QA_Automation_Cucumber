@@ -1,14 +1,15 @@
-- Folder structure
-- Define test cases
-- Feature files
-- Step Definitions
-- Cucumber best practices
+- Folder structure - done
+- Define test cases - done
+- Feature files - done
+- Step Definitions - done
+- Cucumber best practices - 
 - General coding best practices/patterns
 - Automation testing best practices/patterns
-- Reporting
-- Fixtures
+- Reporting 
+- Fixtures 
 - Utilities
 - CI/CD integration ?
+- API tests?
 - ReadMe
 - Performance (eg. execution in a pipeline, network latency, website response time delays,
 etc)
