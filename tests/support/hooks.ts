@@ -5,6 +5,7 @@ Before(async function (this: CustomWorld) {
   await this.init();
 });
 
+
 AfterAll(async function () {
   if (globalBrowser) {
     await globalBrowser.close();

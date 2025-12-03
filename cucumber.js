@@ -16,6 +16,10 @@ module.exports = {
     requireModule: [
       "ts-node/register"
     ],
-       format: ["progress"]
+       format: [
+        "progress",
+        "json:./reports/report.json" 
+       ],
+       publishQuiet: true
   }
 }
