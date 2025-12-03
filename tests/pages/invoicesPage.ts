@@ -1,7 +1,5 @@
 import { Page } from "playwright";
 import { BasePage } from "./BasePage";
-import { URLs } from "../../fixtures/urls";
-import { expect } from "playwright/test";
 
 export class InvoicesPage extends BasePage {
   constructor(page: Page) {
@@ -10,14 +8,6 @@ export class InvoicesPage extends BasePage {
   invoiceRows = '//table//tr[td[1][contains(.,"I")]]';
   amountCells = '//table//tr[td[1][contains(.,"I")]]/td[3]';
   summaryAmount = '//table//tr[td[contains(.,"Sum of invoices")]]/td[2]';
-
-  async navigate() {
-    await this.goto(URLs.baseURL + "/invoices");
-  }
-
-  async verifyTitle(expected: string) {
-    await expect(this.page).toHaveTitle(expected);
-  }
 
   async getInvoiceAmounts(): Promise<number[]> {
     const count = await this.page.locator(this.amountCells).count();

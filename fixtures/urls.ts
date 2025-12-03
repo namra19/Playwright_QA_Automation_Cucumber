@@ -1,5 +1,5 @@
 export const URLs = {
   baseURL: "https://localhost:5001",
-  privacy: "home/privacy",
-  invoices: "home/invoices"
+  privacy: "/Home/Privacy",
+  invoices: "/Home/Invoices"
 };
