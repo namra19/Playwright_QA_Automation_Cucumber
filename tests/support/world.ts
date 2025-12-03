@@ -7,7 +7,6 @@ export class CustomWorld extends World {
   page!: Page;
     context!: BrowserContext;
 
-
    async init() {
     if (!globalBrowser) {
       globalBrowser = await chromium.launch({ headless: false });
