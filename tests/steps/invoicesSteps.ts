@@ -12,8 +12,7 @@ When('the user navigates to the invoices page', async function () {
 
 When('the user calculates the total invoice amount', async function () {
   invoicesPage = new InvoicesPage(this.page);
-  this.invoiceAmounts = await invoicesPage.getInvoiceAmounts();
-  this.total = this.invoiceAmounts.reduce((a: any, b: any) => a + b, 0);
+  this.total = await invoicesPage.getTotalInvoiceAmounts();
 })
 
 Then('the summary row should show the correct total', async function () {
