@@ -1,39 +1,32 @@
-import { Page } from "playwright";
+import { Locator, Page } from "playwright";
 import { BasePage } from "./BasePage";
-import { URLs } from "../../fixtures/urls";
-import { expect } from "playwright/test";
+import { InvoicesPageLocators } from "../locators/invoicePage.locators"
 
 export class InvoicesPage extends BasePage {
+    readonly amountCells: Locator;
+    readonly summaryAmountCell: Locator;
+
   constructor(page: Page) {
     super(page);
-  }
-  invoiceRows = '//table//tr[td[1][contains(.,"I")]]';
-  amountCells = '//table//tr[td[1][contains(.,"I")]]/td[3]';
-  summaryAmount = '//table//tr[td[contains(.,"Sum of invoices")]]/td[2]';
-
-  async navigate() {
-    await this.goto(URLs.baseURL + "/invoices");
+     this.amountCells = page.locator(InvoicesPageLocators.amountCells);
+     this.summaryAmountCell = page.locator(InvoicesPageLocators.summaryAmountCell);
   }
 
-  async verifyTitle(expected: string) {
-    await expect(this.page).toHaveTitle(expected);
-  }
-
-  async getInvoiceAmounts(): Promise<number[]> {
-    const count = await this.page.locator(this.amountCells).count();
-    const values: number[] = [];
-
+  async getTotalInvoiceAmounts(): Promise<number> {
+    const count = await this.page.locator(InvoicesPageLocators.amountCells).count();
+    console.log('count: ' + count)
+    let totalSum = 0;
     for (let i = 0; i < count; i++) {
-      const raw = await this.page.locator(this.amountCells).nth(i).innerText();
+      const raw = await this.page.locator(InvoicesPageLocators.amountCells).nth(i).innerText();
       const cleaned = raw.replace("EUR", "").trim();
-      values.push(parseFloat(cleaned));
+      totalSum += parseFloat(cleaned);
     }
-
-    return values;
+    console.log('totalSum: ' + totalSum)
+    return totalSum;
   }
 
   async getSummaryAmount(): Promise<number> {
-    const summaryText = await this.page.locator(this.summaryAmount).innerText();
+    const summaryText = await this.page.locator(InvoicesPageLocators.summaryAmountCell).innerText();
     return parseFloat(summaryText.replace("EUR", "").trim());
   }
 
