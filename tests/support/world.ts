@@ -5,11 +5,11 @@ let globalBrowser: Browser;
 export class CustomWorld extends World {
   browser!: Browser;
   page!: Page;
-    context!: BrowserContext;
+  context!: BrowserContext;
 
-   async init() {
+  async init() {
     if (!globalBrowser) {
-      globalBrowser = await chromium.launch({ headless: false });
+      globalBrowser = await chromium.launch({ headless: true });
     }
     this.context = await globalBrowser.newContext();
     this.page = await this.context.newPage();
