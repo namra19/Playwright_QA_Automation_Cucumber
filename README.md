@@ -55,23 +55,23 @@ This setup enables clean separation of test logic, reusable page objects, and re
 
 **Folders Purpose:**
 
-fixtures - Stores reusable data/config, e.g., base URLs
-reports -	Output for HTML & JSON Cucumber reports
-features -	Gherkin .feature files
-locators -	Centralized selectors used by POM classes
-pages -	Page Object Model classes
-steps -	Step definitions mapped to Gherkin steps
-hooks.ts -	Before/After hooks, cleanup
-world.ts -	Custom world for sharing context between steps
-cucumber.js - Main Cucumber configuration
-playwright.config.ts- Playwright global settings
+- fixtures: Stores reusable data/config, e.g., base URLs
+- reports: Output for HTML & JSON Cucumber reports
+- features: Gherkin .feature files
+- locators: Centralized selectors used by POM classes
+- pages: Page Object Model classes
+- steps: Step definitions mapped to Gherkin steps
+- hooks.ts:	Before/After hooks, cleanup
+- world.ts:	Custom world for sharing context between steps
+- cucumber.js: Main Cucumber configuration
+- playwright.config.ts: Playwright global settings
 
 **Installation**
 
-**Install dependencies**
+Install dependencies
 npm install
 
-**Install Playwright browsers**
+Install Playwright browsers
 npx playwright install
 
 **Running Tests**
@@ -82,7 +82,7 @@ Run all tests - npm test
 
 All reports are stored under reports/:
 
-HTML report: reports/html-report
-JSON report: reports/json-report
+- HTML report: reports/html-report
+- JSON report: reports/json-report
 
 
