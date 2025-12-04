@@ -1,6 +1,6 @@
 # Playwright_QA_Automation_Test
 
-Playwright TypeScript Framework with Cucumber & POM
+**Playwright TypeScript Framework with Cucumber & POM**
 
 A test automation framework built using Playwright, TypeScript, Cucumber (BDD), and the Page Object Model (POM) design pattern.
 This setup enables clean separation of test logic, reusable page objects, and readable Gherkin scenarios.
@@ -21,8 +21,8 @@ This setup enables clean separation of test logic, reusable page objects, and re
 
 - Easy CI/CD integration
 
-**Project Structure:**
-
+## Project Structure
+```
 ├── fixtures
 │   └── urls.ts
 │
@@ -51,6 +51,7 @@ This setup enables clean separation of test logic, reusable page objects, and re
 ├── playwright.config.ts
 ├── package.json
 └── tsconfig.json
+```
 
 **Folders Purpose:**
 
