@@ -76,7 +76,7 @@ npx playwright install
 
 **Running Tests**
 
-Run all tests - npm test
+Run all tests - npm test OR npx cucumber-js
 
 **Reports**
 
