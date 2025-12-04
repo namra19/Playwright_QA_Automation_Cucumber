@@ -1,0 +1,360 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "invoice-summary-&-details;verify-the-sum-of-all-invoices-shown-in-the-summary-row",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify the sum of all invoices shown in the summary row",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1040170957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the application",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116825792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the invoices page",
+            "match": {
+              "location": "tests/steps/invoicesSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77519999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user calculates the total invoice amount",
+            "match": {
+              "location": "tests/steps/invoicesSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24732208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the summary row should show the correct total",
+            "match": {
+              "location": "tests/steps/invoicesSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2670208
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invoice",
+            "line": 7
+          },
+          {
+            "name": "@calculation",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "invoice-summary-&-details;verify-invoice-‘i634’-has-the-correct-amount",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify invoice ‘I634’ has the correct amount",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 111590874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the application",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90415999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the invoices page",
+            "match": {
+              "location": "tests/steps/invoicesSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97759125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the amount for invoice \"I634\" should be \"423.99 EUR\"",
+            "match": {
+              "location": "tests/steps/invoicesSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4997041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invoice",
+            "line": 12
+          },
+          {
+            "name": "@lookup",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "invoice-summary-&-details",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Invoice Summary & Details",
+    "tags": [],
+    "uri": "tests/features/invoicesPage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "navigation-menu;navigate-to-all-the-pages-using-the-menu",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Navigate to all the pages using the menu",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 102857290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user navigates to the application",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87916374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user navigates to the \"invoices\" page",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95604249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the \"invoices\" page title should be \"Invoices - yuki_qa_automation_frontend\"",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30090458
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigation",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navigation-menu;navigate-to-all-the-pages-using-the-menu",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Navigate to all the pages using the menu",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89329999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user navigates to the application",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97945249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user navigates to the \"privacy\" page",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94051208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the \"privacy\" page title should be \"Privacy Policy - yuki_qa_automation_frontend\"",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14158707
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigation",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navigation-menu;navigate-to-all-the-pages-using-the-menu",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Navigate to all the pages using the menu",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 96865999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user navigates to the application",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103650499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user navigates to the \"home\" page",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71583875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the \"home\" page title should be \"Home Page - yuki_qa_automation_frontend\"",
+            "match": {
+              "location": "tests/steps/navigationSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8509082
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigation",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "navigation-menu",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Navigation Menu",
+    "tags": [],
+    "uri": "tests/features/navigation.feature"
+  }
+]
