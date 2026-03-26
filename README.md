@@ -1,4 +1,4 @@
-# Playwright_QA_Automation_Test
+# Playwright_QA_Automation Cucumber
 
 **Playwright TypeScript Framework with Cucumber & POM**
 
